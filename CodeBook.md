@@ -1,15 +1,3 @@
----
-title: "CodeBook"
-author: "MPBBi"
-date: "23/09/2020"
-output:
-  html_document:
-    df_print: paged
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## UCI HAR DATA
 
