@@ -1,18 +1,22 @@
 library(dplyr)
 library(tidyr)
 
+#check working directory
+wd <- getwd()
+
+
 # getting the labels for activity and names of attributes, separating them from the unnecessary extra no. column
-activitylab <- read.table("C:/RRepos/R data/UCI HAR Dataset/activity_labels.txt") 
-attrinames <- read.table("C:/RRepos/R data/UCI HAR Dataset/features.txt")
+activitylab <- read.table("./UCI HAR Dataset/activity_labels.txt") 
+attrinames <- read.table("./UCI HAR Dataset/features.txt")
 attrinames <- attrinames$V2
 
 # pulling the train and test data sets
-traindata <- read.table("C:/RRepos/R data/UCI HAR Dataset/train/X_train.txt")
-trainlabels <- read.table("C:/RRepos/R data/UCI HAR Dataset/train/y_train.txt")
-trainsub <- read.table("C:/RRepos/R data/UCI HAR Dataset/train/subject_train.txt")
-testdata <- read.table("C:/RRepos/R data/UCI HAR Dataset/test/X_test.txt")
-testlabels <- read.table("C:/RRepos/R data/UCI HAR Dataset/test/y_test.txt")
-testsub <- read.table("C:/RRepos/R data/UCI HAR Dataset/test/subject_test.txt")
+traindata <- read.table("./train/X_train.txt")
+trainlabels <- read.table("./train/y_train.txt")
+trainsub <- read.table("./train/subject_train.txt")
+testdata <- read.table("./test/X_test.txt")
+testlabels <- read.table("./test/y_test.txt")
+testsub <- read.table("./test/subject_test.txt")
 
 #row binding the test and train data 
 combox <- rbind(traindata,testdata)
