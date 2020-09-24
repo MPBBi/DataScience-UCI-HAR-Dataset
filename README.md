@@ -45,6 +45,7 @@ B. The mean and standard deviation was then extracted
 C. Column names was then added to the complete data set
 D. Then replaced the activity codes with actual activity descriptions
 E. The data was then grouped to be then be able to calculate the mean for each individual for each activity.
+F. The tidy data was outputted into a txt file called DataSummary. This is also in the repo.
 ```
 
 The above should meet all the requirements of the assessment piece in regards to manipulating the data.In this repo, there is also a CODEBOOK.md, this CODEBOOK.md should describe the variables, activities and any major script code. The script that provides the tidy data is called run_analysis.R and is contained within this repo.

@@ -94,4 +94,4 @@ The data was manipulated as described briefly in README.md to get the final aggr
 
 To see the means and standard deviation, call objects called means and std. 
 
-The final tidy data is written to a txt file called DataSummary.txt or can also be seen by calling the object tidy.The summary data was created by using group_by and then summarizing via summarise each.
+The final tidy data is written to a txt file called DataSummary.txt which is also avaliable in the repo or can also be seen by calling the object tidy.The summary data was created by using group_by and then summarizing via summarise each.
